@@ -19,12 +19,8 @@ A fully automated Excel system built with VBA to simulate real-time contact inta
 - [References](#references)
 
 ## All Files & How to Run
-- [Files](./docs/all-files.md)
+- [All Files](./docs/all-files.md)
 
-
-## System Overview
-- [Excel File Technical Overview](./docs/system-overview.md#excel-file-technical-overview)
-- [All Modules & Forms Overview](./docs/system-overview.md#modules--forms-overview)
 
 ## Core Features
 #### Case Intake & Lifecycle Management
@@ -49,6 +45,12 @@ A fully automated Excel system built with VBA to simulate real-time contact inta
 - Simulate monthly case volumes based on real regulatory data  
 - Model processing times by case subtype and workload stress factor  
 - Calculate required staffing under different demand scenarios  
+
+## System Overview
+- [Excel File Technical Overview](./docs/system-overview.md#excel-file-technical-overview)
+- [All Modules & Forms Overview](./docs/system-overview.md#modules--forms-overview)
+  - [Modules](./docs/system-overview.md#modules)
+  - [Forms](./docs/system-overview.md#forms)
 
 ## Demo Screenshots
 The following screenshots illustrate the system’s functionality from a user and operations perspective. They are included to demonstrate workflow, automation, and decision-support features rather than low-level implementation details.

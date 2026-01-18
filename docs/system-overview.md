@@ -13,10 +13,10 @@ This Excel VBA system simulates a case management workflow with real-time intake
 3. **All Contacts Sheet**: tblContacts
     - "Generate Data - Day" button generates one day of sample data using VBA module modGenerateDay.bas.
     - "Clear Data" button deletes all ListRows in tblContacts.
-    - "Log a New Contact" buttons opens userform ManualEnterContactForm.frm where user enters details when a contacts is made, date, time, and deadline are automatically recorded using VBA.
+    - "Log a New Contact" buttons opens userform ManualEnterContactForm.frm where user enters details when a contact is made, date, time, and deadline are automatically recorded using VBA.
     - "Update a Case Status" button opens ManualCaseClosed.frm where user enters ID and Outcome of a case, status and remaining columns of tblContacts are automatically filled in using VBA.
     - All buttons function via modules assigned to shapes.
-    - Conditional formatting automatically highlights rows of cases closed after dealine in red.
+    - Conditional formatting automatically highlights rows of cases closed after deadline in red.
 4. **Staff Sheet**: tblStaff, tblHoursDist, tblStaffLoad, Stress Testing 
     - tblStaff automatically filled in using VBA code based on data from tblContacts.
     - "Click to Add a Staff Member" button adds a new staff member column to tblStaff using VBA module AddStaffMember.bas. Program adapts automatically.
