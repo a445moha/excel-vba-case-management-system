@@ -8,7 +8,8 @@ A fully automated Excel system built with VBA to simulate real-time contact inta
 ## Table of Contents
 - [All Files & How to Run](#all-files--how-to-run)
 - [Core Features](#core-features)
-- [Demo Screenshots](#demo-screenshots)
+- [System Overview](#system-overview)
+- [**Demo Screenshots**](#demo-screenshots)
   - [Analytics Dashboard](#1-analytics-dashboard)
   - [Case Tracking & Deadline Monitoring](#2-case-tracking--deadline-monitoring)
   - [All Contacts – System of Record & Automation Engine](#3-all-contacts--system-of-record--automation-engine)
@@ -18,22 +19,12 @@ A fully automated Excel system built with VBA to simulate real-time contact inta
 - [References](#references)
 
 ## All Files & How to Run
-**.xlsm file: https://drive.google.com/file/d/1_gC74T68fdKWpQ9b7iWBdUT2HATsBBSa/view?usp=sharing**
+- [Files](./docs/all-files.md)
 
-**All VBA Modules and Forms: https://drive.google.com/file/d/1U-dYNRQIekUEJ1mILPuXoKeBQTCjsbUR/view?usp=sharing** 
-1. Click on Google drive link above.
-2. Download and unzip files.
-3. Open the Excel workbook (`.xlsm`) that accompanies the modules.
-4. Enable macros in Excel.
-5. Disable security risk:
-  - Close the Excel file.
-  - Right-click the file in File Explorer and select Properties (or "Show more options" > Properties).
-  - In the General tab, find the Security section at the bottom.
-  - Check the "Unblock" box and click Apply, then OK. 
-6. **if needed**, Open the VBA editor (Alt + F11) to import modules/forms:
-   - Right-click project → **Import Module** → select `.bas` files
-   - Right-click project → **Import UserForm** → select `.frm` files
-7. Use the forms/buttons in Excel to interact with the system.
+
+## System Overview
+- [Excel File Technical Overview](./docs/system-overview.md#excel-file-technical-overview)
+- [All Modules & Forms Overview](./docs/system-overview.md#modules--forms-overview)
 
 ## Core Features
 #### Case Intake & Lifecycle Management
@@ -133,6 +124,6 @@ Key features:
 
 
 ## References
-OEB Statistics Used:
+Ontario Energy Board Statistics Used:
 - [OEB Complaint Statistics](https://www.oeb.ca/consumer-information-and-protection/oebs-consumer-protection-role/complaint-statistics)
 - [OEB Compliance Report 2024-2025](https://www.oeb.ca/sites/default/files/Compliance%20report-2024-2025-ENGLISH.pdf)
