@@ -1,98 +1,122 @@
 # Excel VBA Case Management & Workforce Planning System
-A fully automated Excel-based case management system built with VBA to simulate real-time contact intake, deadline tracking, staff workload balancing, and workforce planning. The system dynamically assigns cases, tracks SLA adherence, highlights overdue cases, and models staffing requirements based on historical case distributions and stress factors.
 
+A fully automated Excel system built with VBA to simulate real-time contact intake, SLA tracking, staff workload balancing, and workforce planning. Dynamically assigns cases, highlights overdue tasks, and models staffing needs under varying demand scenarios.
+
+![Analytics Dashboard](<screenshots/Screenshot 2026-01-18 013425.png>)
+
+## Table of Contents
+- [Core Features](#core-features)
+  - [Case Intake & Lifecycle Management](#case-intake--lifecycle-management)
+  - [Deadline & SLA Monitoring](#deadline--sla-monitoring)
+  - [Staff Workload & Assignment Engine](#staff-workload--assignment-engine)
+  - [Workforce Planning & Capacity Modeling](#workforce-planning--capacity-modeling)
+- [Demo Screenshots](#demo-screenshots)
+  - [Analytics Dashboard](#1-analytics-dashboard)
+  - [Case Tracking & Deadline Monitoring](#2-case-tracking--deadline-monitoring)
+  - [All Contacts – System of Record & Automation Engine](#3-all-contacts--system-of-record--automation-engine)
+  - [New Case / Contact Intake & Case Closure Forms](#4-new-case--contact-intake--case-closure-forms)
+  - [Staff Workload & Capacity Planning](#5-staff-workload--capacity-planning)
+- [Implementation Notes](#implementation-notes)
+- [References](#references)
+
+## Core Features
 #### Case Intake & Lifecycle Management
-- VBA userforms to log contacts and complaints in real time
-- Automatic capture of received date/time and resolution timing
-- Case status tracking (Open/Closed) with SLA enforcement
-- Overdue cases automatically highlighted across the system
+- Log contacts and complaints in real time via VBA UserForms  
+- Automatically record creation and resolution timestamps  
+- Track case status (Open / Closed) with SLA enforcement  
+- Highlight overdue cases automatically across the system 
 
 #### Deadline & SLA Monitoring
-- Dynamic “Days Until Deadline” calculation using business days
-- Holiday-aware deadlines (custom 2024 holiday table)
-- Conditional formatting for urgency and SLA violations
-- Real-time adherence flags (“Deadline Met” vs “Overdue”)
+- Dynamic “Days Until Deadline” using business days
+- Flag deadline adherence (Overdue / Met) with conditional formatting  
+- Support holiday-aware deadlines with custom holiday table  
+- Provide a live view of backlog and operational urgency  
 
 #### Staff Workload & Assignment Engine
-- Dynamic staff table with auto-adaptation when staff are added
-- Tracks active cases, average handling time, and daily workload
-- Automated case assignment logic based on capacity
-- Historical staff load tracking for trend analysis
+- Track per-staff active cases, average handling time, and daily workload  
+- Assign cases automatically based on capacity and priority  
+- Monitor historical workload trends for trend analysis  
+- Adjust dynamically as staff members or case volumes change 
 
 #### Workforce Planning & Capacity Modelling
-- Monthly case volume simulation based on real regulatory data
-- Case subtype distributions and processing-time modeling
-- Adjustable workload stress factor
-- Outputs required staffing levels under different demand scenarios
+- Simulate monthly case volumes based on real regulatory data  
+- Model processing times by case subtype and workload stress factor  
+- Calculate required staffing under different demand scenarios  
 
-## Screenshots
+## Demo Screenshots
 The following screenshots illustrate the system’s functionality from a user and operations perspective. They are included to demonstrate workflow, automation, and decision-support features rather than low-level implementation details.
 
 #### 1. Analytics Dashboard
-![](https://drive.google.com/file/d/1DVvEuP4EIsQW4z-N3F-SZjk5fR_fiwVT/view?usp=sharing)
+
+![Analytics Dashboard](<screenshots/Screenshot 2026-01-18 013425.png>)
+
 Executive-style dashboard built using PivotTables and PivotCharts to analyze complaint trends and operational performance.
-Key insights shown:
-- Tracks regulatory compliance and deadline adherence across all complaint categories
-- Analyzes escalation behavior by complaint subtype and utility to surface risk patterns
-- Visualizes staff workload over time to support capacity and staffing decisions
-- Identifies process bottlenecks and compliance risks through dynamic, filter-driven charts
-This dashboard is fully dynamic and updates automatically as new cases are generated or entered through the system.
+Key insights:
+- Analyze complaint trends with PivotTables and PivotCharts  
+- Visualize staff workload and escalation patterns  
+- Identify bottlenecks and compliance risks dynamically  
+- Updates automatically as new cases are added  
 
 #### 2. Case Tracking & Deadline Monitoring
-![](https://drive.google.com/file/d/1mmkx-XKBzWY2Rc-InEiwNKsMB-qdUZz1/view?usp=sharing)
+
+![Case Tracking](<screenshots/Screenshot 2026-01-18 113725.png>)
+
 Displays all active and resolved cases with automated deadline tracking.
-Key features shown:
-- Days Until Deadline calculated dynamically
-- Deadline Adherence status (Overdue / Deadline Met)
-- Conditional formatting to visually flag overdue cases
-- Live view of operational backlog and urgency
+Key features:
+- View active and resolved cases with automated deadlines  
+- Highlight overdue cases with conditional formatting  
+- Track live backlog and urgency  
 
 #### 3. All Contacts - System of Record & Automation Engine
-![](https://drive.google.com/file/d/1ych23Pl0lZS2mWSLman3PkqLKQWHslCg/view?usp=drive_link)
-Key features shown:
-- Centralized case repository: Stores all contacts and complaints with full lifecycle tracking
-- Real-time data capture: Automatically records system date and time for case creation and closure to simulate live operations
-- Hybrid input model:
-    - Manual VBA UserForms for realistic case entry and closure
-    - Automated “Generate Day” function to simulate daily operational load
-- Deadline enforcement:
-    - Resolution deadlines calculated dynamically
-    - Entire row flagged when deadlines are missed to surface compliance risk immediately
-- Workload integration: Feeds live data into staff assignment logic, processing-time calculations, and downstream PivotCharts
-- Scalable design: Table-driven structure allows new staff, case types, and volumes without breaking automation
+
+![alt text](<screenshots/Screenshot 2026-01-18 120245.png>)
+
+Centralized repository for all contacts and complaints with lifecycle tracking.  
+Key features:
+- Central repository for all contacts and complaints  
+- Capture timestamps automatically and simulate daily operational load  
+- Enforce deadlines dynamically with row-level flags  
+- Feed live data into staff assignment and reporting charts  
+- Scalable table-driven design supports new staff, case types, and volumes 
 
 #### 4. New Case / Contact Intake Form & Case Closure Form
-![New Case/Contact Entry](https://drive.google.com/file/d/1axk7N8kOXJqZwU3-t_kIqSThvzuXCOfG/view?usp=drive_link)
-UserForm used to enter new contacts and complaints in real time.
-Key features shown:
-- Automated capture of date and time received
-- Dynamic assignment of priority and staff member
-- Deadline calculation based on case type and business rules
-- Eliminates manual data entry errors
-![Case Closure Form](https://drive.google.com/file/d/1lidBGsSBHnCKsqLKFOOqSECd1wAGYnU2/view?usp=sharing)
-UserForm used to close cases and finalize outcomes.
-Key features shown:
-- Automatic recording of resolution date
-- Validation against resolution deadlines
-- Status updates reflected instantly across tracking views
-- Enables accurate SLA and compliance reporting
+
+![New Case/Contact Entry](<screenshots/Screenshot 2026-01-18 114728.png>)
+
+UserForm for entering new contacts and complaints.  
+Key features:
+- Enter new contacts with automated priority and staff assignment  
+- Calculate deadlines based on business rules  
+- Reduce manual entry errors  
+
+![Case Closure Form](<screenshots/Screenshot 2026-01-18 113208.png>)
+
+UserForm for closing cases and finalizing outcomes.  
+Key features:
+- Record resolution dates automatically  
+- Validate resolution against deadlines  
+- Update status instantly across all views  
+- Enable accurate SLA and compliance reporting 
 
 #### 5. Staff Workload & Capacity Planning
-![](https://drive.google.com/file/d/1ZF0YCI1lDbLOWdCJNcKYjTs3Ds5UH7P-/view?usp=sharing)
-Operational planning view used to monitor staff workload and staffing needs.
-Key features shown:
-- Per-staff case load and average processing time
-- Historical workload tracking for trend analysis
-- Workforce requirement calculations based on case volume
-- Adjustable stress factor to model capacity under pressure
 
-#### Implementation Notes
-- Business logic is implemented using modular VBA (staff assignment, deadline calculation, workload modeling).
-- All dates respect business days and statutory holidays.
-- The system is designed to scale dynamically as staff members or case volume change.
+![Staff Workload & Planning](<screenshots/Screenshot 2026-01-18 114016-1.png>)
 
-*Core business logic is implemented in modular VBA code (staff assignment, deadline calculation, workload modeling), available in the /vba directory.*
+Operational view for monitoring staff workload and staffing needs.  
+Key features:
+- Monitor per-staff case load and average processing time  
+- Track historical workload trends  
+- Calculate required staffing based on volume  
+- Model capacity under pressure with adjustable stress factor
 
+## Implementation Notes
+- Modular VBA handles staff assignment, deadline calculation, and workload modeling  
+- Dates respect business days and statutory holidays  
+- Scales dynamically as staff or case volume changes  
+- VBA code available in the `/vba` directory  
+
+
+## References
 OEB Statistics Used:
-- https://www.oeb.ca/consumer-information-and-protection oebs-consumer-protection-role/complaint-statistics
-- https://www.oeb.ca/sites/default/files/Compliance%20report-2024-2025-ENGLISH.pdf
+- [OEB Complaint Statistics](https://www.oeb.ca/consumer-information-and-protection/oebs-consumer-protection-role/complaint-statistics)
+- [OEB Compliance Report 2024-2025](https://www.oeb.ca/sites/default/files/Compliance%20report-2024-2025-ENGLISH.pdf)
