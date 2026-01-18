@@ -4,12 +4,10 @@ A fully automated Excel system built with VBA to simulate real-time contact inta
 
 ![Analytics Dashboard](<screenshots/Screenshot 2026-01-18 013425.png>)
 
+
 ## Table of Contents
+- [All Files & How to Run](#all-files--how-to-run)
 - [Core Features](#core-features)
-  - [Case Intake & Lifecycle Management](#case-intake--lifecycle-management)
-  - [Deadline & SLA Monitoring](#deadline--sla-monitoring)
-  - [Staff Workload & Assignment Engine](#staff-workload--assignment-engine)
-  - [Workforce Planning & Capacity Modeling](#workforce-planning--capacity-modeling)
 - [Demo Screenshots](#demo-screenshots)
   - [Analytics Dashboard](#1-analytics-dashboard)
   - [Case Tracking & Deadline Monitoring](#2-case-tracking--deadline-monitoring)
@@ -18,6 +16,24 @@ A fully automated Excel system built with VBA to simulate real-time contact inta
   - [Staff Workload & Capacity Planning](#5-staff-workload--capacity-planning)
 - [Implementation Notes](#implementation-notes)
 - [References](#references)
+
+## All Files & How to Run
+**.xlsm file: https://drive.google.com/file/d/1_gC74T68fdKWpQ9b7iWBdUT2HATsBBSa/view?usp=sharing**
+
+**All VBA Modules and Forms: https://drive.google.com/file/d/1U-dYNRQIekUEJ1mILPuXoKeBQTCjsbUR/view?usp=sharing** 
+1. Click on Google drive link above.
+2. Download and unzip files.
+3. Open the Excel workbook (`.xlsm`) that accompanies the modules.
+4. Enable macros in Excel.
+5. Disable security risk:
+  - Close the Excel file.
+  - Right-click the file in File Explorer and select Properties (or "Show more options" > Properties).
+  - In the General tab, find the Security section at the bottom.
+  - Check the "Unblock" box and click Apply, then OK. 
+6. **if needed**, Open the VBA editor (Alt + F11) to import modules/forms:
+   - Right-click project → **Import Module** → select `.bas` files
+   - Right-click project → **Import UserForm** → select `.frm` files
+7. Use the forms/buttons in Excel to interact with the system.
 
 ## Core Features
 #### Case Intake & Lifecycle Management
