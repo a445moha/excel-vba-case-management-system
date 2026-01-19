@@ -59,6 +59,8 @@ The following screenshots illustrate the system’s functionality from a user an
 
 ![Analytics Dashboard](<screenshots/Screenshot 2026-01-18 013425.png>)
 
+Higher Quality Images: https://drive.google.com/file/d/1UNEaOhrkQVaAhlUB6RII3isPVOTDCpgV/view?usp=sharing, https://drive.google.com/file/d/1hs-WBmIecy26uAUeFbdh_qgKrnfqWN2d/view?usp=sharing 
+
 Executive-style dashboard built using PivotTables and PivotCharts to analyze complaint trends and operational performance.
 Key insights:
 - Analyze complaint trends with PivotTables and PivotCharts  
