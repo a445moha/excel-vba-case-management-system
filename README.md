@@ -124,7 +124,7 @@ Key features:
 - Modular VBA handles staff assignment, deadline calculation, and workload modeling  
 - Dates respect business days and statutory holidays  
 - Scales dynamically as staff or case volume changes  
-- VBA code available in the `/vba` directory  
+- VBA code available: [All Files](./docs/all-files.md)
 
 
 ## References
