@@ -28,7 +28,7 @@ This Excel VBA system simulates a case management workflow with real-time intake
     - tblTypeDistribution is purely my planning out of probabilities for accurate data generation using information available on OEB website.
 
 ## Modules & Forms Overview
-### Modules
+### Modules 
 1. **AddStaffMember.bas**
     - Adds a new column to tblStaff with sample staff name.
 2. **DeleteAllRows.bas**
