@@ -1,6 +1,6 @@
 # System Overview
 
-This Excel VBA system simulates a case management workflow with real-time intake, SLA tracking, staff workload balancing, and capacity planning.
+This Excel VBA system simulates a case management workflow with real-time intake, SLA tracking, staff workload balancing, and capacity planning. 
 
 ## Excel File Technical Overview
 1. **Analysis Sheet**: 
