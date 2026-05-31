@@ -3,7 +3,7 @@
 This Excel VBA system simulates a case management workflow with real-time intake, SLA tracking, staff workload balancing, and capacity planning. 
 
 ## Excel File Technical Overview
-1. **Analysis Sheet**: 
+1. **Analysis Sheet**:    
     - PivotTables and PivotCharts of tblContacts, tblCases and tblStaffLoad show complaint trends, escalation patterns, and staff workload.
 2. **Case Tracking Sheet**: tblCases
     - tblCases is tblContacts automatically filtered to only show Open cases. 
